@@ -1,0 +1,102 @@
+.tasksContainer {
+  margin-top: 4rem;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.header strong {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.createdTasks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.createdTasks strong {
+  color: var(--blue);
+}
+
+.completedTasks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.completedTasks strong {
+  color: var(--purple);
+}
+
+.counter {
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+
+  color: var(--gray-100);
+}
+
+.emptyTasks {
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.emptyContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1.5rem;
+}
+
+.emptyContent > img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.emptyContent > strong {
+  margin-top: 1rem;
+  color: var(--gray-300);
+  font-weight: 700;
+  line-height: 1.6rem;
+}
+
+.emptyContent > span {
+  color: var(--gray-300);
+  line-height: 1.6rem;
+}
+
+.task {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--gray-500);
+  gap: 0.75rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.task input[type="checkbox"] {
+  -webkit-appearance: none;
+  width: 2rem;
+  height: 1rem;
+  margin: 0.2rem;
+  background: transparent;
+  border: 0.15rem solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.task input[type="checkbox"]:checked {
+  background: var(--purble);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
